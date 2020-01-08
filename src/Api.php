@@ -25,7 +25,9 @@ use Freshdesk\Resources\EmailConfig;
 use Freshdesk\Resources\Forum;
 use Freshdesk\Resources\Group;
 use Freshdesk\Resources\Product;
+use Freshdesk\Resources\SatisfactionRating;
 use Freshdesk\Resources\SLAPolicy;
+use Freshdesk\Resources\Survey;
 use Freshdesk\Resources\Ticket;
 use Freshdesk\Resources\TimeEntry;
 use Freshdesk\Resources\Topic;
@@ -166,12 +168,21 @@ class Api
     public $slaPolicies;
 
     /**
+     * Satisfaction Rating resources
+     *
+     * @api
+     * @var SatisfactionRating
+     */
+    public $satisfactionRating;
+
+    /**
      * Surveys resources
      *
      * @api
      * @var Survey
      */
     public $survey;
+
 
     /**
      * @internal
