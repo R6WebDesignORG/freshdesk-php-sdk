@@ -166,6 +166,14 @@ class Api
     public $slaPolicies;
 
     /**
+     * Surveys resources
+     *
+     * @api
+     * @var Survey
+     */
+    public $survey;
+
+    /**
      * @internal
      * @var Client
      */
@@ -301,6 +309,10 @@ class Api
         $this->forums = new Forum($this);
         $this->topics = new Topic($this);
         $this->comments = new Comment($this);
+
+        //Survey
+        $this->surveys = new Survey($this);
+        $this->satisfactionRatings = new SatisfactionRating($this);
 
         //Admin
         $this->products = new Product($this);
