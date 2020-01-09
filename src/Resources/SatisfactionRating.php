@@ -22,23 +22,5 @@ class SatisfactionRating extends AbstractResource
      * @internal
      * @var string
      */
-    protected $endpoint = '/satisfaction_ratings';
-
-    /**
-     * The surveys resource endpoint
-     *
-     * @var string
-     * @internal
-     */
-    private $surveysEndpoint = '/surveys';
-
-    /**
-     * Creates the survey endpoint
-     * @return string
-     * @internal
-     */
-    protected function surveysEndpoint()
-    {
-        return $this->surveysEndpoint;
-    }
+    protected $endpoint = '/surveys/satisfaction_ratings';
 }
